@@ -25,7 +25,7 @@ function App() {
 
         <h4 className="prize">
           Stand a chance to win <br/>
-          <span>N3,000,000</span> <br className="mobile" />everyday for the next 5 days
+          <span>N3,000,000</span> everyday for the next 5 days
         </h4>
 
         <div className="how__to__play">
