@@ -1,0 +1,397 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero{
+  height: 100vh;
+  max-width: 100vw;
+  background: url('/src/assets/background.svg') no-repeat center center;
+  background-size: 'contain';
+  position: relative;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 37px 0;
+  overflow: hidden;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.period{
+  display: flex;
+}
+
+.days{
+  margin-left: 10px;
+}
+
+.period__day{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 109%;
+  color: #FFFFFF;
+}
+
+.period__days{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 109%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+.hero__main__text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 91%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-top: 53px;
+}
+
+.hero__main__text span{
+  font-weight: 300;
+}
+
+.prize{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29.4318px;
+  line-height: 111.5%;
+  text-align: center;
+  letter-spacing: -0.06em;
+  color: #FFFFFF;
+  margin: 23px auto;
+}
+
+.prize span{
+  font-weight: 700;
+  z-index: 9 !important;
+}
+
+.how__to__play{
+  width: 425px;
+  height: 257px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  padding: 24px 27px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  z-index: 9 !important;
+}
+
+.how__to__play .title{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+ol{
+  max-width: 100%;
+}
+
+.step{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  list-style-position: inside;
+}
+
+p.step{
+  margin-bottom: 8px;
+}
+
+.step span{
+  font-weight: 800;
+}
+
+.dark__section{
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 16px;
+  z-index: 9 !important;
+}
+
+.dark__section span{
+  margin: 0 5px;
+}
+
+.narrations{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.narrations span{
+  font-weight: 800;
+}
+
+.stars{
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shapes{
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  /* pointer-events: none; */
+  /* animation: App-logo-spin infinite 50s linear; */
+}
+.shapes img{
+  pointer-events: none;
+  animation: App-logo-spin infinite 25s linear;
+  transform-origin: bottom center;
+}
+
+.coin__pot{
+  position: absolute;
+  height: 130px;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn__main{
+  width: 255px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background: #ECAB03;
+  padding: 16px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  margin: 44px auto;
+  cursor: pointer;
+}
+
+.btn__main span{
+  flex: 1;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.btn__main img{
+  width: 24px;
+  height: 24px;
+}
+
+.coin__left, 
+.coin__right{
+  position: absolute;
+} 
+
+.coin__left{
+  bottom: 70px;
+  left: 240px;
+  animation: bounce 9s ease infinite;
+}
+.coin__right{
+  bottom: 50px;
+  right: 200px;
+  animation: bounce 7s ease infinite;
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+    30% { transform:translateY(-45%); }
+    100% { transform:translateY(0); }
+}
+
+.animation-star{
+  position: absolute;
+  bottom: -15px;
+}
+
+.star1 {
+  animation: AnimateStar 5s linear infinite, zigzag 5s ease-in-out infinite alternate;
+  left: 45%;
+}
+.star2 {
+  animation: AnimateStar 6s linear infinite, zigzag 7s ease-in-out infinite alternate;
+  left: 40%;
+}
+.star3 {
+  animation: AnimateStar 8s linear infinite, zigzag 5s ease-in-out infinite alternate;
+  left: 38%;
+}
+.star4 {
+  animation: AnimateStar 7s linear infinite, zigzag 2s ease-in-out infinite alternate;
+  left: 54%;
+}
+
+
+@keyframes AnimateStar {
+  from {
+    bottom: -15px ;
+  }
+  to {
+    bottom: 30%;
+    opacity:0;
+  }
+
+}
+
+@keyframes zigzag {
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+.footer-stars{
+  position: absolute;
+  left: 30%;
+  bottom: 40px;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 10s linear;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .container{
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .hero__main__text{
+    font-size: 40px;
+    line-height: 102%;
+    margin-top: 53px;
+  }
+  
+  .hero__main__text br{
+    display: none;
+  }
+
+  .prize{
+    font-size: 16px;
+    width: 70%;
+  }
+
+  .prize br{
+    display: none;
+  }  
+  
+  .how__to__play{
+    max-width: 100%;
+    height: fit-content;
+  }
+
+  .coin__left{
+    bottom: 70px;
+    left: -30px;
+    width: 90px;
+  }
+  .coin__right{
+    bottom: 50px;
+    right: -30px;
+    width: 70px;
+  }
+  
+  .coin__pot{
+    height: 110px;
+  }
+
+  .star1 {
+    left: 45px;
+  }
+  .star2 {
+    left: 40px;
+  }
+  .star3 {
+    right: 38px;
+  }
+  .star4 {
+    right: 54px;
+  }
+
+  @keyframes AnimateStar {
+    to {
+      bottom: 20%;
+      opacity:0;
+    }
+  
+  }
+
+  .footer-stars{
+    position: absolute;
+    left: initial;
+    right: 10px;
+    bottom: initial;
+    top: 130px;
+    height: 150px;
+    transform: scaleX(-1) rotate(-10deg);
+  }
+
+  .stars{
+    display: none;
+  }
+  
+}
