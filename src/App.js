@@ -51,10 +51,10 @@ function App() {
         </span>
 
         <img src={Stars} alt="" className="stars" />
-        <img src={CoinLeft} alt="" className="coin__left" />
-        <img src={CoinRight} alt="" className="coin__right" />
 
       </div>
+        <img src={CoinLeft} alt="" className="coin__left" />
+        <img src={CoinRight} alt="" className="coin__right" />
       <div className="shapes">
         <img src={Shapes} alt="" />
       </div>
